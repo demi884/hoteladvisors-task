@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.2.xsd">
+    <changeSet author="leo" id="2018-06-14_1-create-contact-table" context="development">
+        <createTable tableName="contact" schemaName="sample-app">
+            <column name="id" type="CHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="firstName" type="VARCHAR(32)"/>
+            <column name="middleName" type="VARCHAR(32)"/>
+            <column name="lastName" type="VARCHAR(32)"/>
+            <column name="phoneNumber" type="VARCHAR(32)"/>
+            <column name="updated" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="address" schemaName="sample-app">
+            <column name="id" type="CHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="contactId" type="CHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="postIndex" type="INT(0)"/>
+            <column name="city" type="VARCHAR(64)"/>
+            <column name="street" type="VARCHAR(64)"/>
+            <column name="house" type="VARCHAR(8)"/>
+            <column name="apartment" type="VARCHAR(32)"/>
+            <column name="updated" type="DATETIME"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

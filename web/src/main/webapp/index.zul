@@ -1,0 +1,12 @@
+<tablelayout columns="1">
+    <tablechildren rowspan="1">
+        <panel title="Table of contents" border="normal" height="500px">
+            <panelchildren>
+                <vlayout>
+                    <a href="/address_page.zul" label="Address Page"/>
+                    <a href="/contact_page.zul" label="Contact Page"/>
+                </vlayout>
+            </panelchildren>
+        </panel>
+    </tablechildren>
+</tablelayout>
