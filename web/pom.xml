@@ -122,5 +122,9 @@
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.zkoss.theme</groupId>
+            <artifactId>silvertail</artifactId>
+        </dependency>
     </dependencies>
 </project>

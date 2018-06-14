@@ -104,6 +104,11 @@
                 <artifactId>zuti</artifactId> <!-- since ZK 8 -->
                 <version>${version.zkoss}</version>
             </dependency>
+            <dependency>
+                <groupId>org.zkoss.theme</groupId>
+                <artifactId>silvertail</artifactId>
+                <version>${version.zkoss}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
