@@ -15,6 +15,7 @@
             </auxheader>
             <zscript>
                 vm.filter.contactId = Executions.getCurrent().getParameter("contactId");
+                vm.changeFilter();
             </zscript>
             <auxheader colspan="1">
                 <image src="/grid/filter/img/funnel.png"/>
