@@ -18,6 +18,7 @@ Address page:
 * No CLI for WildFly;
 * No configurability;
 * English only, no lang bundles;
+* No Unit tests;
 
 ## How to deploy
 1) Setup MySQL driver and datasource at WildFly, suggested schema: sample-app;
